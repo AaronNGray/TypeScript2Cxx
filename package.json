@@ -16,6 +16,7 @@
     "watch": "tsc -w -p ./",
     "lint": "tslint src/**/*.ts -t verbose",
     "build": "tsc -p tsconfig.json",
+    "docs": "rimraf docs && typedoc --out docs src",
     "exec": "ts-node src/main.ts",
     "prepublish": "prepublish_npm.cmd"
   },
@@ -36,8 +37,10 @@
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^7.0.1",
     "tslint": "^5.20.1",
+    "typedoc": "^0.17.3",
     "typescript": "^3.8.3"
   }
 }
